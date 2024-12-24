@@ -6,7 +6,7 @@ export function CreateTodo() {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleAddTodo = async () => {
-        setIsSubmitting(true); // Disable the button during submission
+        setIsSubmitting(true); 
         try {
             const res = await fetch("http://localhost:3000/todo", {
                 method: "POST",
@@ -32,7 +32,7 @@ export function CreateTodo() {
             console.error("Error:", error);
             alert("An error occurred while adding the todo.");
         } finally {
-            setIsSubmitting(false); // Re-enable the button
+            setIsSubmitting(false); 
         }
     };
 
