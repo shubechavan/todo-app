@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { MONGODB_URI } = require('/todoapp/config'); // Ensure the path to your config is correct
+const { MONGODB_URI } = require('/todoapp/config');
 
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
@@ -20,4 +20,4 @@ const todoSchema = new mongoose.Schema({
 
 const Todo = mongoose.model('Todo', todoSchema);
 
-module.exports = Todo; // Export the model directly
+module.exports = Todo;
