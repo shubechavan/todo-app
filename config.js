@@ -1,2 +1,2 @@
-const MONGODB_URI="mongo db link"
+const MONGODB_URI="mongodb link"
 module.exports={MONGODB_URI};
